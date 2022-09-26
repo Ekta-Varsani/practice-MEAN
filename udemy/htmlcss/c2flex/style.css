@@ -1,0 +1,95 @@
+/*body{
+    box-sizing: border-box;
+    width: 800px;
+    
+    justify-content: center;
+    
+}*/
+.container{
+    box-sizing: border-box;
+    width: 800px;
+    justify-content: center;
+    border: 2px solid black;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    background-color: rgb(190, 179, 179);
+}
+footer{
+    color: white;
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+}
+.img1{
+    width: 100%;
+    flex: 1;
+    padding-right: 10px;
+}
+.text{
+    flex: 1;
+    flex-wrap: wrap;
+    padding-right: 10px;
+}
+.product{
+    flex:1;
+}
+
+.abc{
+   /* margin: 0;
+    padding: 0; */
+    display: flex;
+    justify-content: space-between;
+}
+.sale{
+    color: white;
+    background-color: red;
+    height:auto ;
+    width: 50px;
+    font-size: 15px;
+    position: absolute;
+    top: -15px;
+    left: -25px;
+}
+.clr{
+    display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.col-1{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    margin-right: 10px;
+}
+.col-2{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    margin-right: 10px;
+}
+.col-3{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    margin-right: 10px;
+}
+.col-4{
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    margin-right: 10px;
+}
+.col-5{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin-right: 10px;
+}

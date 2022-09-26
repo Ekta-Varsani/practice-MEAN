@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    color: #343a40;
+    font-size: 24px;
+    height: 100vh;
+    text-align: center;
+    font-weight: bold;
+    /*display: grid;
+    grid-template-columns: 80px 400px 1pr 250px;
+    grid-template-rows: 80px 1pr; */
+}
+nav,menu,section,aside,main{
+    padding-top: 20px;
+}
+nav{
+    grid-row: 1/-1;
+    color: white;
+    background-color: #343a40;
+}
+menu{
+    background-color: #6741d9;
+    color: white;
+    grid-column: 2/-1;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding:0 40px;
+}
+button{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #845ef7;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding:8px 12px;
+}
+button:last-child{
+    background-color: rgb(235, 20, 20);
+    margin-left: auto;
+}
+aside{
+    background-color: #e9ecef;
+}
+section{
+    background-color: #e9ecef;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    overflow: scroll;
+}
+.email{
+    background-color:#adb5bd ;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+   grid-template-rows: 80px 1fr;
+}
