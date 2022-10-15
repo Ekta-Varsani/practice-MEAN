@@ -1,4 +1,3 @@
-// const mongoose = require("mongoose")
 const User = require("mongoose").model("user")
 
 exports.check_request_params = function (request_data_body, params_array, response) {
@@ -28,5 +27,19 @@ exports.check_request_params = function (request_data_body, params_array, respon
     }
     else {
         response({ success: true });
+    }
+}
+
+exports.generate_otp = function(length) {
+    try {
+        if (typeof length === "undefined")
+            length = 32;
+        var otpCode = "";
+        var possible = "0123456789";
+        for (var i = 0; i < length; i++)
+            otpCode += possible.charAt(Math.floor(Math.random() * possible.length));
+        return otpCode;
+    } catch (error) {
+        console.error(error);
     }
 }
